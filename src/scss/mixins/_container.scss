@@ -1,0 +1,5 @@
+// I tried this approach, however the information in the
+// spec files was not very clear
+@mixin inner-container {
+  max-width: $max-width;
+}

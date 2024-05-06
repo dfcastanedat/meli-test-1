@@ -1,0 +1,54 @@
+.search-box {
+  padding: $space-8 0;
+  background-color: $yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    width: 55px;
+    height: 40px;
+  }
+
+  &__wrapper {
+    @include inner-container();
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-14;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    padding: 10px 15px;
+    font-size: 18px;
+    // Arbitrary set as no clear info could be obtained from spec
+    width: 1087px;
+    border: none;
+    color: $grey-40;
+
+    &::placeholder {
+      color: $grey-20;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: $grey-10;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__search-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
